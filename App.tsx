@@ -1,13 +1,9 @@
 import React from 'react'
 
-import { Text, View } from 'react-native'
+import Navigator from '@navigation/Navigator'
 
 const App = () => {
-  return (
-    <View>
-      <Text>App</Text>
-    </View>
-  )
+  return <Navigator />
 }
 
 export default App
