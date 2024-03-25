@@ -1,15 +1,24 @@
 import React from 'react'
 
-import { Button, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
+import { useStyles } from 'react-native-unistyles'
+
+import stylesheet from '@styles/screens/bottom/DashboardScreen'
+
+import { PrimaryButton } from '@components'
 
 import { Screens } from '@navigation/constants/Screens'
 import { DashboardScreenNavigationProp } from '@navigation/types'
 
 const DashboardScreen = ({ navigation }: DashboardScreenNavigationProp) => {
+  const { styles } = useStyles(stylesheet)
+
+  const onNavigatePress = () => navigation.navigate(Screens.PROFILE_SCREEN)
+
   return (
-    <View>
-      <Text>Dashboard screen</Text>
-      <Button title='To Profile' onPress={() => navigation.navigate(Screens.PROFILE_SCREEN)} />
+    <View style={styles.container}>
+      <Text style={styles.title}>Dashboard screen</Text>
+      <PrimaryButton title='To Profile' onPress={onNavigatePress} />
     </View>
   )
 }

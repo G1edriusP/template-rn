@@ -11,7 +11,9 @@
       "@navigation/*": ["src/common/navigation/*"],
       "@translation/*": ["src/common/translation/*"],
       "@utils/*": ["src/common/utils/*"],
+      "@screens/*": ["src/ui/screens/*"],
       "@screens": ["src/ui/screens"],
+      "@components/*": ["src/ui/components/*"],
       "@components": ["src/ui/components"],
       "@styles/*": ["src/ui/styles/*"]
     }
