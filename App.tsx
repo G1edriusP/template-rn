@@ -4,6 +4,8 @@ import '@utils/unistyles'
 
 import Navigator from '@navigation/Navigator'
 
+import './src/common/translation'
+
 const App = () => {
   return <Navigator />
 }
