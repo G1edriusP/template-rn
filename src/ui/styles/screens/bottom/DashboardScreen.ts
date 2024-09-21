@@ -7,6 +7,7 @@ export default createStyleSheet((theme) => ({
     backgroundColor: theme.colors.white,
     justifyContent: 'center',
     alignItems: 'center',
+    gap: theme.dimensions.size_8,
   },
   title: {
     fontSize: theme.dimensions.size_24,
